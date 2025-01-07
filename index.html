@@ -1,57 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhupinder's Website</title>
+    <title>Bhupinder Singh (Full Stack Developer)</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
-            <ul>
+            <div class="logo">Bhupinder Singh</div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Welcome to My Website</h1>
-        <p>This is the home section where you can learn more about me.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="Imgs/pexels-danny-meneses-340146-943096.jpg" alt="Slide 1">
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="Imgs/4.jpg" alt="Slide 2">
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="Imgs/3.jpeg" alt="Slide 3">
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <img src="Imgs/1.jpeg" alt="Slide 3">
+                </div>
+            </div>
+
+            <!-- Text Overlay -->
+            <div class="slider-overlay">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Discover my work, my journey, and let's connect!</p>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
     </section>
 
-    <section id="portfolio">
-        <h2>My Portfolio</h2>
-        <p>Here is some of my work:</p>
-        <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-        </ul>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a <strong>Full Stack Developer</strong> with a strong passion for learning and creating exceptional
+            digital experiences.
+            I specialize in both <strong>Front-End Development</strong>
+            (HTML, CSS, JavaScript, and frameworks like <strong>React</strong> and <strong>Angular</strong>)
+            and <strong>Back-End Development</strong> (.NET Core Web API), alongside expertise in
+            <strong>Database Management</strong> with SQL Server.
+        </p>
+        <p>
+            I hold a <strong>Master's degree in Computer Application</strong> and
+            <strong>Business Administration (IT)</strong>, supported by over
+            <strong>16+ years of experience</strong> in developing and managing software applications. From tackling
+            algorithmic challenges
+            to delivering <strong>scalable and user-friendly solutions</strong>, I am dedicated to achieving technical
+            excellence.
+        </p>
+        <p>
+            Currently, I work at <strong>Lovely Group</strong> in India, where I channel my enthusiasm for technology
+            into
+            developing impactful applications. My career is driven by a strong foundation in
+            <strong>communication</strong>,
+            effective collaboration with clients and teams, and the ability to manage multiple priorities under
+            pressure.
+        </p>
+        <p>
+            Beyond coding, I am a <strong>lifelong learner</strong> who enjoys exploring new technologies and refining
+            my skills
+            to stay ahead in a constantly evolving industry. I believe in giving my best to every project, no matter the
+            challenge,
+            and finding fulfillment in pushing the boundaries of what's possible.
+        </p>
+        <img src="imgs/1693237317285Profile.jpg" alt="About Image">
+       
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <div class="resume-container">
+            <!-- Education Section -->
+            <div class="resume-column">
+                <h3>Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Masters in Business Administration</h4>
+                            <p class="timeline-date">2010 - 2011</p>
+                            <p class="timeline-location">Lovely Professional University, India</p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Post Graduate Diploma in Business Management</h4>
+                            <p class="timeline-date">2009 - 2010</p>
+                            <p class="timeline-location">Lovely Professional University, India</p>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Master of Computer Applications</h4>
+                            <p class="timeline-date">2005 - 2008</p>
+                            <p class="timeline-location">Punjab Technical University, India</p>
 
-            <button type="submit">Send</button>
-        </form>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Bachelor of Computer Applications</h4>
+                            <p class="timeline-date">2002 - 2005</p>
+                            <p class="timeline-location">Guru Nanak Dev University, India</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="resume-column">
+                <h3>Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Deputy Director</h4>
+                            <p class="timeline-date">2021 - Present</p>
+                            <p class="timeline-location">Division of Infotech , Lovely Professional University, India
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Asistant Director</h4>
+                            <p class="timeline-date">2020 - 2021</p>
+                            <p class="timeline-location">Division of Infotech , Lovely Professional University, India
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Senior Software Developer</h4>
+                            <p class="timeline-date">2015 - 2019</p>
+                            <p class="timeline-location">Division of Infotech , Lovely Professional University, India
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Project Oïcer</h4>
+                            <p class="timeline-date">2013 - 2015</p>
+                            <p class="timeline-location">Division of Infotech , Lovely Professional University, India
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Software Developer</h4>
+                            <p class="timeline-date">2008 - 2013</p>
+                            <p class="timeline-location">Division of Infotech , Lovely Professional University, India
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Skills Section -->
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <!-- First Column -->
+                <div class="skills-column">
+                    <div class="skill-tab grey-tab">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skill-tab blue-tab">
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skill-tab grey-tab">
+                        <h4>JavaScript</h4>
+                    </div>
+                </div>
+        
+                <!-- Second Column -->
+                <div class="skills-column">
+                    <div class="skill-tab blue-tab">
+                        <h4>jQuery</h4>
+                    </div>
+                    <div class="skill-tab grey-tab">
+                        <h4>TypeScript</h4>
+                    </div>
+                    <div class="skill-tab blue-tab">
+                        <h4>.NET</h4>
+                    </div>
+                </div>
+
+                    <!-- thrid Column -->
+                    <div class="skills-column">
+                        <div class="skill-tab blue-tab">
+                            <h4>MVC</h4>
+                        </div>
+                        <div class="skill-tab grey-tab">
+                            <h4>Angular</h4>
+                        </div>
+                        <div class="skill-tab blue-tab">
+                            <h4>Web API</h4>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Fourth Column -->
+                    <div class="skills-column">
+                        <div class="skill-tab blue-tab">
+                            <h4>Web Services</h4>
+                        </div>
+                        <div class="skill-tab grey-tab">
+                            <h4>SQL Server</h4>
+                        </div>
+                        <div class="skill-tab blue-tab">
+                            <h4>TFS</h4>
+                        </div>
+                    </div>
+
+                     <!-- Fifth Column -->
+                     <div class="skills-column">
+                        <div class="skill-tab blue-tab">
+                            <h4>SSIS</h4>
+                        </div>
+                        <div class="skill-tab grey-tab">
+                            <h4>SSRS</h4>
+                        </div>
+                        <div class="skill-tab blue-tab">
+                            <h4>PowerBI</h4>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+
+
     </section>
 
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-gallery">
+            <!-- HRMS Project -->
+            <div class="project">
+                <img src="ProjectImgs/HRMSSS.png" alt="HRMS Project" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>Human Resource Management System (HRMS)</h3>
+                <p>A comprehensive system designed to streamline HR operations and enhance employee experience. Key
+                    modules include:</p>
+                <ul class="modules-list">
+                    <li>Employee Information Management</li>
+                    <li>Recruitment and Onboarding</li>
+                    <li>Payroll Management</li>
+                    <li>Time and Attendance Management</li>
+                    <li>Leave Management Module</li>
+                    <li>Performance and Appraisal Management</li>
+                    <li>Employee Communication and Self-Service Module</li>
+                    <li>Cases/Incident Management Module</li>
+                    <li>Analytics and Reporting</li>
+                </ul>
+            </div>
+
+            <!-- Safety and Security Management System -->
+            <div class="project">
+                <img src="ProjectImgs/SecurityVisotorSS.png" alt="Safety and Security Project" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>Safety and Security Management System</h3>
+                <p>Enhancing organizational safety and security through efficient management of the following modules:
+                </p>
+                <ul class="modules-list">
+                    <li>Incident Management Module</li>
+                    <li>Visitor Management Module</li>
+                    <li>Access Control and Identity Management Module</li>
+                    <li>Lost and Found Management Module</li>
+                </ul>
+            </div>
+
+            <!-- Quality Assurance Management System -->
+            <div class="project">
+                <img src="ProjectImgs/MOMSS.png" alt="Quality Assurance Project" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>Quality Assurance Management System</h3>
+                <p>Streamlining quality assurance operations with key features such as:</p>
+                <ul class="modules-list">
+                    <li>Quality Inspection Management</li>
+                    <li>Compliance and Policy Governance</li>
+                    <li>Employee Conduct and Compliance</li>
+                    <li>Daily Progress Monitoring</li>
+                    <li>Meeting Documentation and Action Tracking</li>
+                    <li>Target and Compliance Tracking</li>
+                </ul>
+            </div>
+
+            <!-- HRDC Management System -->
+            <div class="project">
+                <img src="ProjectImgs/HRDCSS.png" alt="HRDC Project" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>Human Resource Development Center Management System</h3>
+                <p>Supporting professional growth through effective management of these modules:</p>
+                <ul class="modules-list">
+                    <li>Faculty Development and Training Management</li>
+                    <li>Training Attendance and Records Management</li>
+                    <li>Training Scheduling and Resource Allocation</li>
+                    <li>Training Feedback and Evaluation</li>
+                    <li>Training Proposals and Approvals</li>
+                    <li>Self-Development and Career Growth Tracking</li>
+                    <li>Course and Training Material Management</li>
+                    <li>Training Needs and Outcome Analysis</li>
+                    <li>Image Gallery and Documentation</li>
+                </ul>
+            </div>
+
+            <!-- Residential Services Management System -->
+            <div class="project">
+                <img src="ProjectImgs/Hostel Booking.jpg" alt="Residential Services Project" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>Residential Services Management System</h3>
+                <p>Efficiently managing residential services through the following modules:</p>
+                <ul class="modules-list">
+                    <li>Accommodation Management</li>
+                    <li>Hostel Admission and Registration</li>
+                    <li>Meal Management Services</li>
+                    <li>Leave and Attendance Management</li>
+                    <li>Room and Facility Maintenance</li>
+                    <li>Student Reporting Management</li>
+                    <li>Visitor Management</li>
+                    <li>Student Engagement and Activities</li>
+                    <li>Electricity Management</li>
+                </ul>
+            </div>
+
+            <!-- R&D Cell Management System -->
+            <div class="project">
+                <img src="ProjectImgs/Save Copy right 19-06-05-2024.JPG" alt="R&D Project" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>Research and Development Cell Management System</h3>
+                <p>Enhancing research operations with the following modules:</p>
+                <ul class="modules-list">
+                    <li>Research and Academic Achievements Management</li>
+                    <li>Research Proposal and Funding Management</li>
+                    <li>Research Grants and External Funding</li>
+                    <li>Research Project Management</li>
+                    <li>Conference and Seminar Management</li>
+                    <li>Intellectual Property Rights Management</li>
+                </ul>
+            </div>
+
+            <!-- Library Resource Feedback -->
+            <div class="project">
+                <img src="ProjectImgs/CallsDashboard.jpg" alt="Library Resource Feedback" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>Library Resource Feedback</h3>
+                <p>
+                    A client-side application to manage attendance tracking and gather feedback on library resources for
+                    actionable insights. Key modules include:
+                </p>
+                <ul class="modules-list">
+                    <li>Attendance Tracking & Integration</li>
+                    <li>Library Feedback Collection</li>
+                    <li>Feedback Reminder System</li>
+                    <li>Feedback Review & Action Management</li>
+                    <li>Library Resource Assessment</li>
+                    <li>Corrective Actions & Progress Tracking</li>
+                    <li>User Engagement & Notification</li>
+                    <li>Feedback History & Reporting</li>
+                    <li>Power BI Dashboard & Analytics</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <img src="ProjectImgs/LpuEmailSS.png" alt="LPUeMail Application" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>LPUeMail Application</h3>
+                <p>
+                    A robust internal organizational communication tool designed for secure and efficient email
+                    management. Key modules include:
+                </p>
+                <ul class="modules-list">
+                    <li>User Authentication & Security</li>
+                    <li>Dashboard Overview</li>
+                    <li>Inbox Management</li>
+                    <li>Compose & Messaging</li>
+                    <li>Outbox & Sent Items</li>
+                    <li>Group Messaging Management</li>
+                    <li>Message Archival System</li>
+                    <li>Notification System</li>
+                    <li>Template Management</li>
+                    <li>Forwarding & Printing</li>
+                    <li>Settings & Customization</li>
+                    <li>Search & Filter</li>
+                </ul>
+            </div>
+
+            <!-- Popup Modal for Image -->
+            <div id="imagePopup" class="image-popup">
+                <span class="close-popup" onclick="closeImagePopup()">&times;</span>
+                <img class="popup-content" id="popupImage">
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Address</h4>
+                    <p>Jalandhar,Punjab,India</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email Us</h4>
+                    <p>https://bhupinderdhindsa.github.io/BhupinderSingh/</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                    <h4>LinkedIn</h4>
+                    <p>
+                        <a href="www.linkedin.com/in/bhupinder-singh-dhindsa"
+                            target="_blank">www.linkedin.com/in/bhupinder-singh-dhindsa</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Bhupinder. All rights reserved.</p>
+        <p>© 2025 Bhupinder Singh. All rights reserved.</p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
