@@ -33,6 +33,7 @@ setInterval(nextSlide, 5000);
 
 // Function to open the image in a popup
 function openImagePopup(src) {
+    return;
     const popup = document.getElementById("imagePopup");
     const popupImage = document.getElementById("popupImage");
 
@@ -47,3 +48,8 @@ function closeImagePopup() {
 }
 
 
+
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }

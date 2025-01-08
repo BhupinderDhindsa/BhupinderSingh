@@ -11,6 +11,90 @@ body {
     color: #333;
 }
 
+/* Header Styling */
+header {
+    background: #222; /* Dark background color */
+    color: white; /* Text color */
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for header */
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #0078D7; /* Highlight color on hover */
+}
+
+/* Hamburger Icon (Visible in Mobile View) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjusted for header height */
+        right: 0;
+        background-color: #222; /* Same as header */
+        width: 200px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        display: none; /* Hidden by default */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show dropdown when active */
+    }
+
+    .hamburger {
+        display: flex; /* Show Hamburger Icon */
+    }
+}
+
+
+
+/* 
 header {
     background: #222;
     color: white;
@@ -47,7 +131,7 @@ nav {
 
 .nav-links a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Hero Section */
 .hero {
@@ -153,8 +237,9 @@ nav {
 .contact h2 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 28px;
+
     font-weight: bold;
+    font-size: 2.5em;
 }
 
 .contact-info {
@@ -228,6 +313,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 /* Slides Container */
@@ -235,6 +321,7 @@ footer {
     display: flex;
     width: 300%;
     transition: transform 0.5s ease-in-out;
+
 }
 
 /* Individual Slide */
@@ -247,6 +334,7 @@ footer {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    filter: blur(5px); /* Apply blur effect */
 }
 
 /* Navigation Buttons */
@@ -525,7 +613,7 @@ button.prev:hover, button.next:hover {
 
 .resume h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5em;
     margin-bottom: 30px;
 }
 
@@ -563,7 +651,7 @@ button.prev:hover, button.next:hover {
     width: 20px;
     height: 20px;
     background: #fff;
-    border: 3px solid #0078D7;
+    border: 3px solid #007bff;
     border-radius: 50%;
 }
 
@@ -626,7 +714,7 @@ button.prev:hover, button.next:hover {
 }
 
 .progress-fill {
-    background-color: #0078D7;
+    background-color: #007bff;
     height: 100%;
     transition: width 0.5s ease;
 }
@@ -649,7 +737,7 @@ button.prev:hover, button.next:hover {
 
 .skills h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -685,7 +773,7 @@ button.prev:hover, button.next:hover {
 }
 
 .blue-tab {
-    background-color: #0078D7; /* Blue */
+    background-color: #007bff; /* Blue */
 }
 
 /* Hover Effect */

@@ -17,6 +17,12 @@
     <header>
         <nav>
             <div class="logo">Bhupinder Singh</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <!-- Hamburger Icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -26,6 +32,7 @@
             </ul>
         </nav>
     </header>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -51,8 +58,9 @@
 
             <!-- Text Overlay -->
             <div class="slider-overlay">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Discover my work, my journey, and let's connect!</p>
+                <h1>Hi, I'm Bhupinder Singh.</h1>
+                <h2>Welcome to my Portfolio.</h2>
+                <p>Explore my journey, projects, and expertise in building modern web applications and creative solutions.</p>
                 <a href="#projects" class="btn">View Projects</a>
             </div>
 
@@ -71,7 +79,7 @@
             I am a <strong>Full Stack Developer</strong> with a strong passion for learning and creating exceptional
             digital experiences.
             I specialize in both <strong>Front-End Development</strong>
-            (HTML, CSS, JavaScript, and frameworks like <strong>React</strong> and <strong>Angular</strong>)
+            (HTML, CSS, JavaScript, and frameworks like <strong>Angular</strong>)
             and <strong>Back-End Development</strong> (.NET Core Web API), alongside expertise in
             <strong>Database Management</strong> with SQL Server.
         </p>
@@ -99,7 +107,7 @@
             and finding fulfillment in pushing the boundaries of what's possible.
         </p>
         <img src="Imgs/1693237317285Profile.jpg" alt="About Image">
-       
+
     </section>
 
     <!-- Resume Section -->
@@ -204,7 +212,7 @@
             </div>
         </div>
 
-        
+
         <!-- Skills Section -->
         <div class="skills">
             <h2>Skills</h2>
@@ -221,7 +229,7 @@
                         <h4>JavaScript</h4>
                     </div>
                 </div>
-        
+
                 <!-- Second Column -->
                 <div class="skills-column">
                     <div class="skill-tab blue-tab">
@@ -235,48 +243,48 @@
                     </div>
                 </div>
 
-                    <!-- thrid Column -->
-                    <div class="skills-column">
-                        <div class="skill-tab blue-tab">
-                            <h4>MVC</h4>
-                        </div>
-                        <div class="skill-tab grey-tab">
-                            <h4>Angular</h4>
-                        </div>
-                        <div class="skill-tab blue-tab">
-                            <h4>Web API</h4>
-                        </div>
+                <!-- thrid Column -->
+                <div class="skills-column">
+                    <div class="skill-tab blue-tab">
+                        <h4>MVC</h4>
                     </div>
+                    <div class="skill-tab grey-tab">
+                        <h4>Angular</h4>
+                    </div>
+                    <div class="skill-tab blue-tab">
+                        <h4>Web API</h4>
+                    </div>
+                </div>
 
-                    
-                    <!-- Fourth Column -->
-                    <div class="skills-column">
-                        <div class="skill-tab blue-tab">
-                            <h4>Web Services</h4>
-                        </div>
-                        <div class="skill-tab grey-tab">
-                            <h4>SQL Server</h4>
-                        </div>
-                        <div class="skill-tab blue-tab">
-                            <h4>TFS</h4>
-                        </div>
-                    </div>
 
-                     <!-- Fifth Column -->
-                     <div class="skills-column">
-                        <div class="skill-tab blue-tab">
-                            <h4>SSIS</h4>
-                        </div>
-                        <div class="skill-tab grey-tab">
-                            <h4>SSRS</h4>
-                        </div>
-                        <div class="skill-tab blue-tab">
-                            <h4>PowerBI</h4>
-                        </div>
+                <!-- Fourth Column -->
+                <div class="skills-column">
+                    <div class="skill-tab blue-tab">
+                        <h4>Web Services</h4>
                     </div>
+                    <div class="skill-tab grey-tab">
+                        <h4>SQL Server</h4>
+                    </div>
+                    <div class="skill-tab blue-tab">
+                        <h4>TFS</h4>
+                    </div>
+                </div>
+
+                <!-- Fifth Column -->
+                <div class="skills-column">
+                    <div class="skill-tab blue-tab">
+                        <h4>SSIS</h4>
+                    </div>
+                    <div class="skill-tab grey-tab">
+                        <h4>SSRS</h4>
+                    </div>
+                    <div class="skill-tab blue-tab">
+                        <h4>PowerBI</h4>
+                    </div>
+                </div>
             </div>
         </div>
-        
+
 
 
     </section>
@@ -287,6 +295,52 @@
     <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div class="project-gallery">
+            <!-- internal email -->
+            <div class="project">
+                <img src="ProjectImgs/LpuEmailSS.png" alt="LPUeMail Application" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>LPUeMail Application</h3>
+                <p>
+                    A robust internal organizational communication tool designed for secure and efficient email
+                    management. Key modules include:
+                </p>
+                <ul class="modules-list">
+                    <li>User Authentication & Security</li>
+                    <li>Dashboard Overview</li>
+                    <li>Inbox Management</li>
+                    <li>Compose & Messaging</li>
+                    <li>Outbox & Sent Items</li>
+                    <li>Group Messaging Management</li>
+                    <li>Message Archival System</li>
+                    <li>Notification System</li>
+                    <li>Template Management</li>
+                    <li>Forwarding & Printing</li>
+                    <li>Settings & Customization</li>
+                    <li>Search & Filter</li>
+                </ul>
+            </div>
+            <!-- Library Resource Feedback -->
+            <div class="project">
+                <img src="ProjectImgs/LibraryCapture.JPG" alt="Library Resource Feedback" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>Library Resource Feedback</h3>
+                <p>
+                    A client-side application to manage attendance tracking and gather feedback on library resources for
+                    actionable insights. Key modules include:
+                </p>
+                <ul class="modules-list">
+                    <li>Attendance Tracking & Integration</li>
+                    <li>Library Feedback Collection</li>
+                    <li>Feedback Reminder System</li>
+                    <li>Feedback Review & Action Management</li>
+                    <li>Library Resource Assessment</li>
+                    <li>Corrective Actions & Progress Tracking</li>
+                    <li>User Engagement & Notification</li>
+                    <li>Feedback History & Reporting</li>
+                    <li>Power BI Dashboard & Analytics</li>
+                </ul>
+            </div>
+
             <!-- HRMS Project -->
             <div class="project">
                 <img src="ProjectImgs/HRMSSS.png" alt="HRMS Project" class="project-image"
@@ -306,7 +360,21 @@
                     <li>Analytics and Reporting</li>
                 </ul>
             </div>
-
+            <!-- R&D Cell Management System -->
+            <div class="project">
+                <img src="ProjectImgs/Save Copy right 19-06-05-2024.JPG" alt="R&D Project" class="project-image"
+                    onclick="openImagePopup(this.src)">
+                <h3>Research and Development Cell Management System</h3>
+                <p>Enhancing research operations with the following modules:</p>
+                <ul class="modules-list">
+                    <li>Research and Academic Achievements Management</li>
+                    <li>Research Proposal and Funding Management</li>
+                    <li>Research Grants and External Funding</li>
+                    <li>Research Project Management</li>
+                    <li>Conference and Seminar Management</li>
+                    <li>Intellectual Property Rights Management</li>
+                </ul>
+            </div>
             <!-- Safety and Security Management System -->
             <div class="project">
                 <img src="ProjectImgs/SecurityVisotorSS.png" alt="Safety and Security Project" class="project-image"
@@ -376,67 +444,10 @@
                 </ul>
             </div>
 
-            <!-- R&D Cell Management System -->
-            <div class="project">
-                <img src="ProjectImgs/Save Copy right 19-06-05-2024.JPG" alt="R&D Project" class="project-image"
-                    onclick="openImagePopup(this.src)">
-                <h3>Research and Development Cell Management System</h3>
-                <p>Enhancing research operations with the following modules:</p>
-                <ul class="modules-list">
-                    <li>Research and Academic Achievements Management</li>
-                    <li>Research Proposal and Funding Management</li>
-                    <li>Research Grants and External Funding</li>
-                    <li>Research Project Management</li>
-                    <li>Conference and Seminar Management</li>
-                    <li>Intellectual Property Rights Management</li>
-                </ul>
-            </div>
 
-            <!-- Library Resource Feedback -->
-            <div class="project">
-                <img src="ProjectImgs/CallsDashboard.jpg" alt="Library Resource Feedback" class="project-image"
-                    onclick="openImagePopup(this.src)">
-                <h3>Library Resource Feedback</h3>
-                <p>
-                    A client-side application to manage attendance tracking and gather feedback on library resources for
-                    actionable insights. Key modules include:
-                </p>
-                <ul class="modules-list">
-                    <li>Attendance Tracking & Integration</li>
-                    <li>Library Feedback Collection</li>
-                    <li>Feedback Reminder System</li>
-                    <li>Feedback Review & Action Management</li>
-                    <li>Library Resource Assessment</li>
-                    <li>Corrective Actions & Progress Tracking</li>
-                    <li>User Engagement & Notification</li>
-                    <li>Feedback History & Reporting</li>
-                    <li>Power BI Dashboard & Analytics</li>
-                </ul>
-            </div>
 
-            <div class="project">
-                <img src="ProjectImgs/LpuEmailSS.png" alt="LPUeMail Application" class="project-image"
-                    onclick="openImagePopup(this.src)">
-                <h3>LPUeMail Application</h3>
-                <p>
-                    A robust internal organizational communication tool designed for secure and efficient email
-                    management. Key modules include:
-                </p>
-                <ul class="modules-list">
-                    <li>User Authentication & Security</li>
-                    <li>Dashboard Overview</li>
-                    <li>Inbox Management</li>
-                    <li>Compose & Messaging</li>
-                    <li>Outbox & Sent Items</li>
-                    <li>Group Messaging Management</li>
-                    <li>Message Archival System</li>
-                    <li>Notification System</li>
-                    <li>Template Management</li>
-                    <li>Forwarding & Printing</li>
-                    <li>Settings & Customization</li>
-                    <li>Search & Filter</li>
-                </ul>
-            </div>
+
+
 
             <!-- Popup Modal for Image -->
             <div id="imagePopup" class="image-popup">
@@ -466,9 +477,16 @@
                 <i class="fas fa-envelope"></i>
                 <div>
                     <h4>Email Us</h4>
-                    <p>https://bhupinderdhindsa.github.io/BhupinderSingh/</p>
+                    <p>dhindsasinghbhupinder@gmail.com</p>
                 </div>
             </div>
+            <!-- <div class="contact-item">
+                <i class="fas fa-globe"></i>
+                <div>
+                    <h4>Email Us</h4>
+                    <p>https://bhupinderdhindsa.github.io/BhupinderSingh/</p>
+                </div>
+            </div> -->
             <div class="contact-item">
                 <i class="fab fa-linkedin"></i>
                 <div>
